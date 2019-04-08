@@ -3,7 +3,7 @@ Twitter Like Animation Example
 
 Just a twitter like animation using only CSS image sprites technique.
 
-![Twitter Like](twitter-like.gif)
+![Twitter Like Animation](twitter-like-animation.gif)
 
 
 Credits:
