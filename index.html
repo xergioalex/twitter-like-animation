@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitter like</title>
+	<style type="text/css">
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+		.like {
+			cursor: pointer;
+			width: 100px;
+			height: 100px;
+			border: 0;
+			background-color: transparent;
+			background-image: url('corazon.png');
+			outline: 0;
+		}
+		.like.is-liked {
+			animation-name: like;
+			animation-duration: .8s;
+			animation-timing-function: steps(28);
+			animation-fill-mode: forwards;
+		}
+		@keyframes like {
+			/*0% - 100% | to from*/
+			0% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: -2800px 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="tweet-box">
+		<button class="like" id="like"></button>
+	</div>
+	<script type="text/javascript">
+		const $like = document.getElementById('like');
+		$like.addEventListener('click', (event) => {
+			$like.classList.toggle('is-liked');
+		});
+	</script>
+</body>
+</html>
